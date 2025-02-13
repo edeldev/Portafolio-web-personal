@@ -2,20 +2,257 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html,
+body {
+  color: #fff;
+  min-height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/** IMAGEN PERSONAL **/
+
+.circle {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+.dot {
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  transform: rotate(270deg);
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  top: 208px;
+  right: 105px;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0cf0ff;
+  box-shadow: 0 0 10px #0cf0ff, 0 0 30px #0cf0ff;
+}
+
+.dark-theme .dot::before {
+  background: #000000;
+  box-shadow: 0 0 10px #000000, 0 0 30px #000000;
+}
+
+@keyframes animateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.det {
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  transform: rotate(270deg);
+  animation: animateDot 3s linear forwards;
+}
+
+@keyframes animateDot {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.det::before {
+  content: "";
+  position: absolute;
+  top: 208px;
+  right: 105px;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0cf0ff;
+  box-shadow: 0 0 10px #0cf0ff, 0 0 30px #0cf0ff;
+}
+
+.dark-theme .det::before {
+  background: #000000;
+  box-shadow: 0 0 10px #000000, 0 0 30px #000000;
+}
+
+.outer {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  padding: 6.5px;
+  box-shadow: -1px 2px 14px 2px transparent;
+  -webkit-box-shadow: -1px 2px 14px 2px transparent;
+  -moz-box-shadow: -1px 2px 14px 2px transparent;
+  animation: colorCircleOut 8s infinite;
+}
+
+.dark-theme .outer {
+  animation: colorCircleOutLight 8s infinite;
+}
+
+@keyframes colorCircleOut {
+  0% {
+    box-shadow: -1px 2px 14px 2px white;
+  }
+  10% {
+    box-shadow: -1px 2px 14px 2px rgba(255, 153, 0, 0.75);
+  }
+  20% {
+    box-shadow: -1px 2px 14px 2px rgba(217, 255, 0, 0.75);
+  }
+  30% {
+    box-shadow: -1px 2px 14px 2px rgba(145, 255, 0, 0.75);
+  }
+  40% {
+    box-shadow: -1px 2px 14px 2px rgba(0, 255, 128, 0.75);
+  }
+  50% {
+    box-shadow: -1px 2px 14px 2px rgba(0, 255, 128, 0.75);
+  }
+  60% {
+    box-shadow: -1px 2px 14px 2px rgba(25, 228, 126, 0.75);
+  }
+  70% {
+    box-shadow: -1px 2px 14px 2px #0cf0ff;
+  }
+  80% {
+    box-shadow: -1px 2px 14px 2px #0cf0ff;
+  }
+  90% {
+    box-shadow: -1px 2px 14px 2px #0cf0ff;
+  }
+  100% {
+    box-shadow: -1px 2px 14px 2px #0cf0ff;
+  }
+}
+@keyframes colorCircleOutLight {
+  0% {
+    box-shadow: -1px 2px 14px 2px rgba(253, 0, 0, 0.75);
+  }
+  10% {
+    box-shadow: -1px 2px 14px 2px rgba(255, 153, 0, 0.75);
+  }
+  20% {
+    box-shadow: -1px 2px 14px 2px rgba(199, 164, 9, 0.75);
+  }
+  30% {
+    box-shadow: -1px 2px 14px 2px rgba(170, 170, 170, 0.75);
+  }
+  40% {
+    box-shadow: -1px 2px 14px 2px rgba(109, 109, 109, 0.75);
+  }
+  50% {
+    box-shadow: -1px 2px 14px 2px rgba(255, 30, 0, 0.75);
+  }
+  60% {
+    box-shadow: -1px 2px 14px 2px rgba(165, 70, 7, 0.75);
+  }
+  70% {
+    box-shadow: -1px 2px 14px 2px #000000;
+  }
+  80% {
+    box-shadow: -1px 2px 14px 2px #000000;
+  }
+  90% {
+    box-shadow: -1px 2px 14px 2px #000000;
+  }
+  100% {
+    box-shadow: -1px 2px 14px 2px #000000;
+  }
+}
+.inner {
+  width: 207px;
+  height: 207px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(62, 62, 62, 0.75),
+    inset -4px -4px 6px -1px rgba(62, 62, 62, 0.75),
+    -0.5px -0.5px 0px rgba(62, 62, 62, 0.75),
+    0.5px 0.5px 0px rgba(62, 62, 62, 0.75),
+    0px 12px 10px -10px rgba(62, 62, 62, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-personal img {
+  width: 215px;
+  height: 215px;
+  transition: all 0.3s ease;
+  z-index: 11;
+  cursor: pointer;
+}
+
+.imagen-personal img:hover {
+  filter: drop-shadow(0px 0px 10px rgba(17, 239, 255, 0.8));
+}
+
+.dark-theme .imagen-personal img:hover {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dark-theme .tooltip {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.typed {
+  animation: down 2s ease-in;
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
