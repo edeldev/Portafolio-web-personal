@@ -1,21 +1,21 @@
 "use client";
 
-import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useTheme } from "@/contexts/ThemeContext";
-import type { IOptions, RecursivePartial } from "@tsparticles/engine";
+import type { IOptions, Engine, RecursivePartial } from "@tsparticles/engine";
 
 interface CoverParticleProps {
   id?: string;
 }
 
 export const CoverParticle = ({ id }: CoverParticleProps) => {
-  const [init, setInit] = useState(false);
+  const [init, setInit] = useState<boolean>(false);
   const { theme } = useTheme();
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
+    initParticlesEngine(async (engine: Engine) => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
