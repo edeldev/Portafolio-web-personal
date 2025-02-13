@@ -149,6 +149,7 @@ export const PROYECTS: TProyect[] = [
     title: "Sitio de ropa",
     link: "https://ledbeey.vercel.app",
     code: "https://github.com/edeldev/ledbeey",
+    proyect: "01",
   },
   {
     id: 2,
@@ -158,6 +159,7 @@ export const PROYECTS: TProyect[] = [
     title: "Buscador de películas",
     link: "https://edelfilms.netlify.app",
     code: "https://github.com/edeldev/search-movie",
+    proyect: "02",
   },
   {
     id: 3,
@@ -167,6 +169,7 @@ export const PROYECTS: TProyect[] = [
     title: "Página tipo Beacons",
     link: "https://edeldev-enlaces.netlify.app",
     code: "https://github.com/edeldev/edeldev-enlaces",
+    proyect: "03",
   },
   {
     id: 4,
@@ -176,6 +179,7 @@ export const PROYECTS: TProyect[] = [
     title: "Portafolio web",
     link: "https://edeldev.netlify.app",
     code: "https://github.com/edeldev/Sitio-Web-Personal-edeldev",
+    proyect: "04",
   },
   {
     id: 5,
@@ -185,6 +189,7 @@ export const PROYECTS: TProyect[] = [
     title: "Clon de Udemy",
     link: "https://demyclone.netlify.app",
     code: "https://github.com/edeldev/Udemy-Clon",
+    proyect: "05",
   },
 ];
 

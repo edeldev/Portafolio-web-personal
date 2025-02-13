@@ -34,4 +34,5 @@ export type TProyect = {
   image: StaticImageData;
   link: string;
   code: string;
+  proyect: string;
 };
