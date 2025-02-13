@@ -1,4 +1,4 @@
 export interface IHeader {
   theme: string;
-  setTheme: Function;
+  setTheme: (param: string | number) => void;
 }
