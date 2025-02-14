@@ -8,26 +8,6 @@ body {
   min-height: 100vh;
 }
 
-@layer utilities {
-  ::-webkit-scrollbar {
-    width: 0.4rem;
-    background: #10101a;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #0cf0ff;
-    border-radius: 0.5rem;
-  }
-
-  .dark ::-webkit-scrollbar {
-    background: #c4c4c4;
-  }
-
-  .dark ::-webkit-scrollbar-thumb {
-    background: #000000;
-  }
-}
-
 /** IMAGEN PERSONAL **/
 
 .circle {
