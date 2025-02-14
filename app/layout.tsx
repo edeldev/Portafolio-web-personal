@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
-import { Header } from "@/components";
+import { DynamicTitle, Header } from "@/components";
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${urbanist.className} bg-[#10101a] dark:bg-[#CCCDCB]`}>
         <ThemeProvider>
+          <DynamicTitle />
           <Header />
           {children}
           <Navbar />
