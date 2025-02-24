@@ -46,7 +46,7 @@ export const ProyectsPage = () => {
           <div className="flex flex-col gap-3 items-center md:items-start">
             <h4
               title={proyect.title}
-              className="text-xl text-center md:text-start font-bold animate-proyectDark dark:animate-proyectLight "
+              className="text-xl text-center md:text-start font-bold animate-proyectDark dark:animate-proyectLight truncate w-[10rem]"
             >
               {proyect.title}
             </h4>
