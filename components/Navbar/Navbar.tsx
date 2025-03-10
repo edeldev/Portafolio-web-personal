@@ -20,7 +20,7 @@ export const Navbar = () => {
             <Link
               key={page?.id}
               href={page?.route}
-              className={`relative flex items-center justify-center cursor-pointer hover:text-primary dark:hover:text-black ${
+              className={`relative transition-all duration-300 ease-in-out flex items-center justify-center cursor-pointer hover:text-primary dark:hover:text-black ${
                 router === page.route &&
                 "text-primary dark:text-black before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-primary before:dark:bg-black before:absolute before:-bottom-2"
               }`}
