@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { PROGRAMING_LANGUAGES } from "@/utils/data";
 import Image from "next/image";
-import { Contact, TimeLine } from "./components";
+import { Contact, TimelineComponent } from "./components";
 import { MotionTransition } from "../Transition";
 
 export const AboutMePage = () => {
@@ -27,11 +27,7 @@ export const AboutMePage = () => {
         </div>
       </MotionTransition>
 
-      <p className="text-lg z-10 mt-5 font-bold dark:text-black">
-        Mi objetivo es:
-      </p>
-
-      <TimeLine />
+      <TimelineComponent />
 
       <Contact />
     </Fragment>
