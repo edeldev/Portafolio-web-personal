@@ -1,2 +1,2 @@
-export { TimeLine } from "./TimeLine";
+export { TimelineComponent } from "./TimeLine";
 export { Contact } from "./Contact";
