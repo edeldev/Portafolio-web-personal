@@ -146,7 +146,7 @@ export const LetterGlitch = ({
 
   return (
     <div className="fixed inset-0 bg-black overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-[20rem] dark:h-[10rem] pointer-events-none bg-gradient-to-b from-black dark:from-white to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-[20rem] dark:h-[10rem] pointer-events-none bg-gradient-to-b from-black dark:from-black to-transparent"></div>
 
       <canvas ref={canvasRef} className="block w-full h-full" />
 

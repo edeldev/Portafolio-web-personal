@@ -1,4 +1,4 @@
-import { CoverParticle, ProyectsPage, TransitionPage } from "@/components";
+import { CoverParticle, ProjectsPage, TransitionPage } from "@/components";
 import { ContainerPage } from "@/components/ContainerPage";
 
 const Proyects = () => {
@@ -8,7 +8,7 @@ const Proyects = () => {
       <CoverParticle />
 
       <ContainerPage>
-        <ProyectsPage />
+        <ProjectsPage />
       </ContainerPage>
     </main>
   );

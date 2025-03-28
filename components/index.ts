@@ -4,7 +4,7 @@ export { HomePage } from "./HomePage";
 export { Navbar } from "./Navbar";
 export { MotionTransition, TransitionPage } from "./Transition";
 export { AboutMePage } from "./AboutMePage";
-export { ProyectsPage } from "./ProyectsPage";
+export { ProjectsPage } from "./ProjectsPage";
 export { ContactPage } from "./ContactPage";
 export { DynamicTitle } from "./DynamicTitle";
 export { LetterGlitch } from "./LetterGlitch";

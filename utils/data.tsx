@@ -44,7 +44,7 @@ export const NAVIGATION_PAGES: TNavigationPage[] = [
   {
     id: 3,
     icon: <IconFolder size={24} stroke={1} />,
-    route: "/proyects",
+    route: "/projects",
   },
   {
     id: 4,

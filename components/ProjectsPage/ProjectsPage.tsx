@@ -6,7 +6,7 @@ import Link from "next/link";
 import { PROYECTS } from "@/utils/data";
 import { IconBrandGithub } from "@tabler/icons-react";
 
-export const ProyectsPage = () => {
+export const ProjectsPage = () => {
   return (
     <Fragment>
       <h2 className="text-2xl md:text-5xl text-primary dark:text-black font-bold z-10 text-center">
