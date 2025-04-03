@@ -24,11 +24,13 @@ import JS from "../public/js.png";
 import NODE from "../public/programacion.png";
 import DATA_BASE from "../public/base-de-datos.png";
 
-import PROYECTO1 from "../public/ledbeey.png";
-import PROYECTO2 from "../public/edelfilms.png";
-import PROYECTO3 from "../public/edeldev-enlaces.png";
-import PROYECTO4 from "../public/proyecto1.png";
-import PROYECTO5 from "../public/proyecto2.png";
+import PROYECTO1 from "../public/proyect1.webp";
+import PROYECTO2 from "../public/proyect2.webp";
+import PROYECTO3 from "../public/proyect3.webp";
+import PROYECTO4 from "../public/proyect4.webp";
+import PROYECTO5 from "../public/proyect5.webp";
+import PROYECTO6 from "../public/proyect6.webp";
+import PROYECTO7 from "../public/proyect7.webp";
 
 export const NAVIGATION_PAGES: TNavigationPage[] = [
   {
@@ -145,51 +147,71 @@ export const PROYECTS: TProyect[] = [
     id: 1,
     lenguages: "HTML, CSS, Next",
     image: PROYECTO1,
-    alt: "Sitio web de tienda de ropa",
-    title: "Sitio de ropa",
-    link: "https://ledbeey.vercel.app",
-    code: "https://github.com/edeldev/ledbeey",
+    alt: "Sitio web de servicio",
+    title: "Sitio de servicio",
+    link: "https://edeldev-studio.vercel.app",
+    code: "https://github.com/edeldev/edeldev-studio",
     proyect: "01",
   },
   {
     id: 2,
-    lenguages: "HTML, CSS, React",
+    lenguages: "HTML, CSS, Next",
     image: PROYECTO2,
-    alt: "Buscador de peliculas",
-    title: "Buscador de películas",
-    link: "https://edelfilms.netlify.app",
-    code: "https://github.com/edeldev/search-movie",
+    alt: "Sitio web de Arquitectura",
+    title: "Sitio de Arquitectura",
+    link: "https://parrallax-arquitectura.vercel.app",
+    code: "https://github.com/edeldev/Parrallax-Arquitectura",
     proyect: "02",
   },
   {
     id: 3,
-    lenguages: "HTML, CSS, React",
+    lenguages: "HTML, CSS, Next",
     image: PROYECTO3,
-    alt: "Página tipo Beacons",
-    title: "Página tipo Beacons",
-    link: "https://edeldev-enlaces.netlify.app",
-    code: "https://github.com/edeldev/edeldev-enlaces",
+    alt: "Portafolio personal",
+    title: "Portafolio personal",
+    link: "https://edeldev.vercel.app",
+    code: "https://github.com/edeldev/Portafolio-web-personal",
     proyect: "03",
   },
   {
     id: 4,
-    lenguages: "HTML, CSS y JS",
+    lenguages: "HTML, CSS, Next",
     image: PROYECTO4,
-    alt: "Sitio web personal",
-    title: "Portafolio web",
-    link: "https://edeldev.netlify.app",
-    code: "https://github.com/edeldev/Sitio-Web-Personal-edeldev",
+    alt: "Sitio web de tienda de ropa",
+    title: "Sitio de ropa",
+    link: "https://ledbeey.vercel.app",
+    code: "https://github.com/edeldev/ledbeey",
     proyect: "04",
   },
   {
     id: 5,
-    lenguages: "HTML, CSS y Boostrap",
+    lenguages: "HTML, CSS, React",
     image: PROYECTO5,
+    alt: "Sitio tipo linktree",
+    title: "Sitio web de enlaces",
+    link: "https://edeldev-links.vercel.app",
+    code: "https://github.com/edeldev/edeldev-links",
+    proyect: "05",
+  },
+  {
+    id: 6,
+    lenguages: "HTML, CSS y Boostrap",
+    image: PROYECTO6,
     alt: "Clon de Udemy",
     title: "Clon de Udemy",
     link: "https://demyclone.netlify.app",
     code: "https://github.com/edeldev/Udemy-Clon",
-    proyect: "05",
+    proyect: "06",
+  },
+  {
+    id: 7,
+    lenguages: "HTML, CSS, React",
+    image: PROYECTO7,
+    alt: "Buscador de peliculas",
+    title: "Buscador de películas",
+    link: "https://edelfilms.netlify.app",
+    code: "https://github.com/edeldev/search-movie",
+    proyect: "07",
   },
 ];
 
